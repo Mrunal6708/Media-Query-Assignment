@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img gallery</title>
+    <style>
+        body{
+            margin: 10px;
+            padding: 10px;
+        }
+        .img{
+            height: 100%;
+            width: 100%;
+        }
+        .img-gallery{
+            padding: 20px;
+            margin: 10px;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 0.5rem;
+        }
+        @media screen and (max-width:800px){
+            .img-gallery{
+                grid-template-areas: 
+                "img-1 img-2"
+                "img-3";
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media screen and (max-width:500px){
+             .img-gallery{
+                grid-template-areas: 
+                "img-1"
+                "img-2"
+                "img-3";
+                grid-template-columns: 1fr ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img-gallery">
+        <img class="img-1" src="https://fastly.picsum.photos/id/169/200/300.jpg?hmac=5EPn5kvK71xgHn-1BAILeGz45FNBGasUBZQulf9HOmU" alt="">
+        <img class="img-2" src="https://fastly.picsum.photos/id/198/200/300.jpg?hmac=Jnk3eRWYnOUbfVsjK23Mj6kSpEIk-yivwNwNUPZCgiA" alt="">
+        <img class="img-3" src="https://fastly.picsum.photos/id/986/200/300.jpg?hmac=uk_NL7rXttZ_ISvqJ3g_aV8Z_hQMxNLaABWXMHESj2Q" alt="">
+    </div>
+</body>
+</html>

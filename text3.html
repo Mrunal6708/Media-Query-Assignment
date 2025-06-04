@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 10px;
+            margin: 10px;
+        }
+        header{
+            display: block;
+            justify-content:center;
+            align-items: center;
+            background-color: black;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            margin: 15px;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            margin: 10px 120px;
+            padding: 5px 5px;
+        }
+        @media screen and (max-width:768px){
+           header{
+            display: block;
+            height: auto;
+            background-color: darkgray;
+            padding: 5px;
+           }
+           ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+           }
+           li a{
+            display: block;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <header >
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Servies</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        .main{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin: 10px 10px;
+            padding: 5px;
+            height: 500px;
+        }
+        .box{
+            display: flex;
+            padding: 10px;
+            margin: 5px;
+            justify-content: center;
+            color: white;
+        }
+       
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+        }
+        .box3{
+            background-color: blue;
+        }
+        .box4{
+            background-color: darkgoldenrod;
+        }
+        @media screen and (max-width:500px){
+            .main{
+                grid-template-areas: 
+                "box1"
+                "box2"
+                "box3"
+                "box4";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>
